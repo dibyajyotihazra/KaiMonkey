@@ -16,5 +16,5 @@ variable "db_username" {}
 variable "db_password" {}
 
 variable "public_access" {
-  default = true
+  default = false
 }
