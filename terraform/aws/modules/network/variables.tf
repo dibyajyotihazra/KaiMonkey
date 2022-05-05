@@ -1,5 +1,5 @@
 variable "environment" {
-  description = "the type of environment (dev,staging/prod)"
+  description = "THE type of environment (dev,staging/prod)"
 }
 
 variable "default_tags" {
