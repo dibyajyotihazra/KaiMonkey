@@ -10,3 +10,7 @@ variable "default_tags" {
 variable "az_count" {
   default = 2
 }
+
+variable "protocol" {
+  default = "TCP1"
+}
