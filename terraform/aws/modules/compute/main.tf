@@ -1,5 +1,6 @@
 data "template_file" "km_ecs_template" {
   template = file("./modules/compute/task-definitions.json")
+  
   vars = {
     ENVIRONMENT = var.environment
     LOG_GROUP   = aws_cloudwatch_log_group.km_log_group.name
