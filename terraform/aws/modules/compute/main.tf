@@ -1,5 +1,6 @@
 data "template_file" "km_ecs_template" {
   template = file("./modules/compute/task-definitions.json")
+  
   vars = {
     ENVIRONMENT = var.environment
     LOG_GROUP   = aws_cloudwatch_log_group.km_log_group.name
@@ -9,6 +10,7 @@ data "template_file" "km_ecs_template" {
 
 resource "aws_iam_role" "km_ecs_task_execution_role" {
   name = "km_ecs_task_execution_role_${var.environment}"
+  
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
