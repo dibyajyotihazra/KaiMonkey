@@ -12,5 +12,5 @@ variable "az_count" {
 }
 
 variable "protocol" {
-  default = "not tcp"
+  default = "TCP"
 }
